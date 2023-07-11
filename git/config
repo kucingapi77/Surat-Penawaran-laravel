@@ -1,0 +1,16 @@
+[core]
+	repositoryformatversion = 0
+	filemode = false
+	bare = false
+	logallrefupdates = true
+	symlinks = false
+	ignorecase = true
+[remote "origin"]
+	url = https://github.com/kucingapi77/Surat-Penawaran-laravel.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[branch "main"]
+	remote = origin
+	merge = refs/heads/main
+[remote "surat_penawaran"]
+	url = https://gitlab.com/kucingorennn77/surat-penawaran-laravel-srp.git
+	fetch = +refs/heads/*:refs/remotes/surat_penawaran/*
