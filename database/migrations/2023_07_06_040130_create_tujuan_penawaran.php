@@ -11,13 +11,13 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('detail_sow', function (Blueprint $table) {
-            $table->string('id_detail_sow')->primary();
-            $table->string('id_sow');
-            $table->foreign('id_sow')->references('id_sow')->on('sow');
-            $table->string('rincian_pekerjaan');
+        Schema::create('tujuan_penawaran', function (Blueprint $table) {
+            $table->string('id_tujuan')->primary();
             $table->string('nama_perusahaan');
-            $table->string('pic_penerima');
+            $table->string('alamat');
+            $table->string('email');
+            $table->string('no_telepon');
+            $table->string('pic');
         });
     }
 
@@ -26,6 +26,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('detail_sow');
+        Schema::dropIfExists('tujuan_penawaran');
     }
 };

@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string('id_detail_sow');
             $table->foreign('id_detail_sow')->references('id_detail_sow')->on('detail_sow');
             $table->string('rincian_pekerjaan');
-            $table->string('lembaga_penawar');
+            $table->string('tugas_penawar');
             $table->string('pic_penerima');
         });
     }

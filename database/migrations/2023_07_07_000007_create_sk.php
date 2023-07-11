@@ -13,9 +13,9 @@ return new class extends Migration
     {
         Schema::create('sk', function (Blueprint $table) {
             $table->string('id_sk')->primary();
-            $table->text('deskripsi');
             $table->string('id_penawaran');
-            $table->foreign('id_penawaran')->references('id_penawaran')->on('tabel_penawaran');
+            $table->foreign('id_penawaran')->references('id_penawaran')->on('penawaran');
+            $table->text('deskripsi');
         });
     }
 

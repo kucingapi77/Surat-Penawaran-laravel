@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('pengantar', function (Blueprint $table) {
             $table->string('id_pengantar')->primary();
             $table->string('id_penawaran');
-            $table->foreign('id_penawaran')->references('id_penawaran')->on('tabel_penawaran');
+            $table->foreign('id_penawaran')->references('id_penawaran')->on('penawaran');
             $table->string('nama_lembaga');
             $table->string('alamat_tujuan');
             $table->text('isi');
