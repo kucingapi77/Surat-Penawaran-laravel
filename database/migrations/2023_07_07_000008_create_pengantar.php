@@ -19,6 +19,7 @@ return new class extends Migration
             $table->string('alamat_tujuan');
             $table->text('isi');
             $table->date('tanggal');
+            $table->timestamps();
         });
     }
 

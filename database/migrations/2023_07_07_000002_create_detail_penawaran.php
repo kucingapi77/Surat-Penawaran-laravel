@@ -23,6 +23,7 @@ return new class extends Migration
             $table->Integer('satuan');
             $table->Integer('harga_satuan');
             $table->Integer('total');
+            $table->timestamps();
         });
     }
 

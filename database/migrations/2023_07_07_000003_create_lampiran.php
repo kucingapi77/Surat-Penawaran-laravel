@@ -17,6 +17,7 @@ return new class extends Migration
             $table->foreign('id_penawaran')->references('id_penawaran')->on('penawaran');
             $table->string('nama_lampiran');
             $table->text('deskripsi');
+            $table->timestamps();
         });
     }
 

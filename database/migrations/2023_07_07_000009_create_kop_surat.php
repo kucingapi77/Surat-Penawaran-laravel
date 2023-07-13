@@ -18,6 +18,7 @@ return new class extends Migration
             $table->string('nomor_surat');
             $table->string('lampiran');
             $table->string('perihal');
+            $table->timestamps();
         });
     }
 

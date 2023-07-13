@@ -17,9 +17,9 @@ return new class extends Migration
             $table->string('id_perusahaan_tujuan');
             $table->foreign('id_perusahaan_tujuan')->references('id_tujuan')->on('tujuan_penawaran');
             $table->string('lampiran');
-            $table->string('alamat');
             $table->text('deskripsi');
             $table->string('jenis_penawaran');
+            $table->timestamps();
         });
     }
 
